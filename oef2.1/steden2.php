@@ -3,7 +3,7 @@
 error_reporting( E_ALL );
 ini_set( 'display_errors', 1 );
 
-include_once "connection.php"
+include_once  "getData.php";
 
 ?>
 
@@ -35,47 +35,25 @@ include_once "connection.php"
 
         <?php
 
-        function getData($statement){
-            global $conn;
-            $result = $conn -> query($statement);
+        //        define and execute query
+        $sql = "select * from images";
+        $get_data_array = getData($sql);
 
-            // show result if there are many
-            if ($result -> num_rows > 0){
-                // output data of each row
+                    foreach ($get_data_array as $row ) {
 
-
-                while($row = $result -> fetch_assoc()){
-
-                    $steden = array("$row[img_filename]" => "$row[img_title]");
-
-                    foreach ($steden as $key => $value ) {
-
-                        $img = './img/'.$key;
+                        $img = './img/'.$row['img_filename'];
 
                         echo "<div class='col-sm-4'>";
-                        echo "<h3>$value </h3>";
-                        echo "$row[img_width] x $row[img_height]" ;
+                        echo '<h3>' .$row['img_title'] .'</h3>';
+                        echo "<p>" .$row['img_width'] .'x' .$row['img_height'] ."</p>" ;
                         echo "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>";
                         echo "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>";
                         echo "<img class='img-fluid' src='$img' width='300px' height='250px'> <br>";
                         echo '<a href=stad.php?img_id=' . $row['img_id'] . '>Meer info</a>';
-
-
                         echo "</div>";
 
                     }
 
-                }
-            }
-        }
-
-
-
-        //define and execute query
-        $sql = "select * from images";
-
-
-        getData($sql);
 
         ?>
     </div>

@@ -3,7 +3,7 @@
 error_reporting( E_ALL );
 ini_set( 'display_errors', 1 );
 
-include_once "connection.php"
+include_once "getData.php"
 
 ?>
 
@@ -34,48 +34,27 @@ include_once "connection.php"
     <div class='row'>
 
         <?php
+           $sql_stat1 = "select * from images";
+           $dataArr = getData($sql_stat1);
+            print_r($dataArr);
+//
 
-        function getData($statement){
-            global $conn;
-            $result = $conn -> query($statement);
+                    foreach ($dataArr as $row ) {
 
-            // show result if there are many
-            if ($result -> num_rows > 0){
-                // output data of each row
-
-
-                while($row = $result -> fetch_assoc()){
-
-                    $steden = array("$row[img_filename]" => "$row[img_title]");
-
-                    foreach ($steden as $key => $value ) {
-
-                        $img = './img/'.$key;
+                        $img = './img/'.$row['img_filename'];
 
 
                         echo "<div class='col-sm-4'>";
-                        echo "<h3>$value </h3>";
-                        echo "$row[img_width] x $row[img_height]" ;
+                        echo '<h3>' .$row["img_title"] . '</h3>';
+                        echo '<p>' .$row['img_width']. 'x' .$row['img_height']. '</p>' ;
                         echo "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>";
                         echo "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>";
-                        echo "<img class='img-fluid' src='$img' width='300px' height='250px'> ";
+                        echo "<img class='img-fluid' src='$img'> ";
 
 
                         echo "</div>";
 
                     }
-
-                }
-            }
-        }
-
-
-
-        //define and execute query
-        $sql = "select * from images";
-
-
-        getData($sql);
 
         ?>
     </div>
