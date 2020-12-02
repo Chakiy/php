@@ -52,13 +52,13 @@ include_once "connection.php"
 
                         $img = './img/'.$key;
 
-
                         echo "<div class='col-sm-4'>";
                         echo "<h3>$value </h3>";
                         echo "$row[img_width] x $row[img_height]" ;
                         echo "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>";
                         echo "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>";
-                        echo "<img class='img-fluid' src='$img' width='300px' height='250px'> ";
+                        echo "<img class='img-fluid' src='$img' width='300px' height='250px'> <br>";
+                        echo '<a href=stad.php?img_id=' . $row['img_id'] . '>Meer info</a>';
 
 
                         echo "</div>";
