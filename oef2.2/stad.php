@@ -1,17 +1,12 @@
 <?php
 
-error_reporting( E_ALL );
-ini_set( 'display_errors', 1 );
-
-
 include_once "getData.php";
-include_once "templates/head.html";
-include_once "templates/jumbotron.html";
+include_once "lib/sqlInjections.php";
+include_once "lib/errorHandling.php";
+include_once "lib/htmlComponents.php";
+printHead("templates/head.html");
+printHead("templates/jumbo.html");
 
-
-if (!is_numeric($_GET['img_id'])){
-    die("Wrong  parameter");
-}
 ?>
 
 <div class='container'>
