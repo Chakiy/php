@@ -8,20 +8,13 @@ include_once "./lib/include_print.php";
 
         <?php
 
-        //     define and execute query in data-function
+        //  get data
         $sql = "select * from images";
-        $get_data_array = getData($sql);
+        $data = getData($sql);
 
-                    //voor elke colomn gegevens halen
-                    foreach ($get_data_array as $row ) {
-
-                        $img = './img/'.$row['img_filename'];
-
-                        include "templates/column.php"; // colom laden
-                        echo '<a href=stad.php?img_id=' . $row['img_id'] . '>Meer info</a>';
-                        echo "</div>";
-                    }
-
+        //marge data and template
+        $marge = margeColumnWithData("column.html", $data);
+        print $marge;
 
         ?>
     </div>

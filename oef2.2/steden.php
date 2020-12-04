@@ -11,16 +11,10 @@ include_once "./lib/include_print.php";
         //     define and execute query in data-function
            $sql_stat1 = "select * from images";
            $dataArr = getData($sql_stat1);
-//            print_r($dataArr);
 
-                  //voor elke colomn gegevens halen
-                    foreach ($dataArr as $row ) {
-
-                        $img = './img/'.$row['img_filename'];
-
-                        include "templates/column.php"; // colom laden
-                        echo "</div>";
-                    }
+        //marge data and template
+        $marge = margeColumnWithData("column.html", $dataArr);
+        print $marge;
 
         ?>
     </div>
