@@ -1,0 +1,49 @@
+<div class='col-sm-12'>
+<form class="justify-content-center" id="mainform" name="mainform" method="POST" action="save.php" >
+
+
+    <div class="form-group row">
+        <label for="img_id" class="col-sm-1 col-form-label">ID</label>
+        <div class="col-sm-6">
+            <input type="text" readonly class="form-control-plaintext" id="img_id" name="img_id" value="id">
+        </div>
+    </div>
+
+
+
+    <div class="form-group row">
+        <label for="img_title" class="col-sm-1 col-form-label">Title</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="img_title" name="img_title" placeholder="title">
+        </div>
+    </div>
+
+
+
+    <div class="form-group row">
+        <label for="img_filename" class="col-sm-1 col-form-label">Filename</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="img_filename" name="img_filename" placeholder="filename">
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label for="img_width" class="col-sm-1 col-form-label">Width</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="img_width" name="img_width" placeholder="width">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="img_height" class="col-sm-1 col-form-label">Height</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" id="img_height" name="img_height" placeholder="height">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+<img class='img-fluid' src='./img/@img_filename@' width='75%'> <br>
+
+
+</div>
