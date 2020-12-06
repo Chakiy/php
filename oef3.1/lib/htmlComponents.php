@@ -102,3 +102,28 @@ function margeColumnWithData($template, $data){
     return $returnvalue;
 }
 
+
+function margeStadForm($template = "stad_form.html", $data){
+    // inlezen van template
+    $template = "./templates/" .$template;
+    $html = file_get_contents($template);
+
+    //merge
+
+
+    foreach ($data as $row ) {
+
+        foreach ($row as $key => $value) { // array_keys($row) as $field -> slaat alle keys van ARRAY(uit databank in $row)
+            // vb img_id, img_title ....
+//            $replace = array(, $row['img_place_info']);
+            $html = str_replace("@img_filename@", $row['img_filename'], $html);
+        }
+    }
+    print $html;
+
+
+//    $html = str_replace(, $title,$html );
+
+//    print $html;
+}
+

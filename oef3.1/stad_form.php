@@ -9,9 +9,8 @@ $sqlTitle = "select * from images where img_id='" . $_GET['img_id'] . "'";
 $dataTitle = getData($sqlTitle);
 printTitleStad("head.html", $dataTitle);
 printJumbo("Bewerk Afbeelding");
+margeStadForm("stad_form.html", $dataTitle);
 
-
-print file_get_contents("./templates/stad_form.html");
 
 
 ?>
