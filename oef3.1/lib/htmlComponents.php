@@ -108,15 +108,15 @@ function margeStadForm($template = "stad_form.html", $data){
     $template = "./templates/" .$template;
     $html = file_get_contents($template);
 
-    //merge
-
+    //zoek
+    $search = array("@img_filename@", "@img_id@");
 
     foreach ($data as $row ) {
 
         foreach ($row as $key => $value) { // array_keys($row) as $field -> slaat alle keys van ARRAY(uit databank in $row)
             // vb img_id, img_title ....
-//            $replace = array(, $row['img_place_info']);
-            $html = str_replace("@img_filename@", $row['img_filename'], $html);
+            $replace = array($row['img_filename'], $row['img_id']);
+            $html = str_replace($search, $replace, $html);
         }
     }
     print $html;
