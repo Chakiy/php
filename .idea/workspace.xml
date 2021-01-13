@@ -2,8 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="508e519c-9ebf-48fd-b8fd-a317710bcc00" name="Default Changelist" comment="oef 3.1:&#10;-update function added&#10;&#10;to do:">
+      <change afterPath="$PROJECT_DIR$/oef4.2/assets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/img/berlin.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/img/london.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/img/paris.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/lib/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/lib/connection_data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/lib/form_elements.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/lib/html_functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/lib/pdo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/lib/sanitize.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/lib/save.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/lib/security.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/lib/validate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/stad.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/stad_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/steden.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/templates/column.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/templates/column_full.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/templates/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/templates/jumbo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/templates/navBar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oef4.2/templates/stad_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef4.1/templates/column.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef4.1/templates/column.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +62,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/oef4.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/oef4.2/templates" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -51,16 +75,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/oef4.2/templates" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/oef4.1" />
+      <recent name="$PROJECT_DIR$/oef3.2" />
+      <recent name="$PROJECT_DIR$/oef3.1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/oef2.2/lib" />
       <recent name="$PROJECT_DIR$/oef1.1" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/oef4.1" />
-      <recent name="$PROJECT_DIR$/oef3.2" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/oef3.1" />
-      <recent name="$PROJECT_DIR$/oef2.1" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -80,7 +104,9 @@
       <workItem from="1608324970356" duration="368000" />
       <workItem from="1608328383765" duration="350000" />
       <workItem from="1610029726622" duration="3732000" />
-      <workItem from="1610392281201" duration="4530000" />
+      <workItem from="1610392281201" duration="4655000" />
+      <workItem from="1610446614228" duration="483000" />
+      <workItem from="1610563779834" duration="9181000" />
     </task>
     <task id="LOCAL-00001" summary="oef1.1">
       <created>1606778192691</created>
