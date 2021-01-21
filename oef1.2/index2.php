@@ -42,7 +42,7 @@ ini_set( 'display_errors', 1 );
 
 
             echo "<div class='col-sm-4'>";
-            echo "<h3>$value </h3>";
+            echo "<h3>$value</h3>";
             echo "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>";
             echo "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>";
             echo "<img class='img-fluid' src='$img' width='300px' height='250px'> ";
